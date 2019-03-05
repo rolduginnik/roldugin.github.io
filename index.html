@@ -1,34 +1,54 @@
-﻿<html>
+<html>
 <head>
-<title>Exploring HTML</title>
+<title>Nik's_</title>
 <style>
 body {
-color: red;
+color: black;
 }
 h1 {
-font-family: Arial, sans-serif; 
-font-sizw: 32px;
-color: black;
+font-family: Castellar, sans-serif; 
+font-size: 36px;
+color: gray;
+}
+p {
+font-family: Areal, sans-serif;
+font-size: 12px;
+}
+main {
+margin-left: 55px;
 }
 </style>
 </head>
 <body>
-<h1>My First Web Page</h1>
-<p>This is my first web page, it's a little basic, but it's helping me understand how HTML works and how to markup my content.</p>
-<h1>My Second Paragraph</h1>
-<p>This is my second paragraph</p>
-<button id="color">Change color!</button>
+<h1 id=intro><center>Introduction</center></h1>
+<main>
+<p>Hi, my name is <em><strong>Nikolai Roldugin.</strong></em> I'm from <em><strong>Russia.</strong></em> Nowadays I live in Canada.</p>
+<button id=Like>Like</button>
+<button id=Dislike>Dislike</button>
+</main>
 <script>
-document.getElementById('color').onclick = changeColor;
-var currentColor = "red";
-
+document.getElementById('Like').onclick = changeColor;
+var currentColor = "black";
 function changeColor() {
-   if(currentColor == "red"){
+   if(currentColor == "black" || currentColor == "orange"){
    document.body.style.color = "green";
    currentColor = "green";
    } else {
-   document.body.style.color = "red";
-   currentColor = "red";
+   document.body.style.color = "black";
+   currentColor = "black";
+   }
+   return currentColor;
+   }
+
+document.getElementById('Dislike').onclick = changeColor1;
+var currentColor = "black";
+function changeColor1() {
+   if(currentColor == "black" || currentColor == "green"){
+   document.body.style.color = "orange";
+   currentColor = "orange";
+   } else {
+   document.body.style.color = "black";
+   currentColor = "black";
    }
    return currentColor;
    }
