@@ -39,6 +39,7 @@ nav {
 	height: 40px;
     background: #343a40;
     padding: 0 30px;
+	padding-top: 10px;
 	box-shadow: 0 0 10em rgba(0, 0, 0, 0.9);
 }
 div#logo {
