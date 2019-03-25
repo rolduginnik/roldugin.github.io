@@ -35,7 +35,7 @@ table {
   box-sizing: border-box;
 }
 nav {
-    position: fixed;
+    position:inherit;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -80,12 +80,12 @@ a:hover {
 	color: rgba(255, 255, 255, 0.62) !important;
 }
 section {
-	margin-top: 2em;
+	margin-top: 0em;
 	width: 100%;
 	background-image: url(../images/background.jpg);
 	text-align: center;
 }
-#pic1 {
+#pic1 .round {
 	text-align: center;
 }
 .round {
