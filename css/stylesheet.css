@@ -34,6 +34,7 @@ table {
   font-size: 100%;
   box-sizing: border-box;
 }
+/*
 nav {
     position: sticky;
 	height: 40px;
@@ -42,6 +43,8 @@ nav {
 	padding-top: 10px;
 	box-shadow: 0 0 10em rgba(0, 0, 0, 0.9);
 }
+*/
+/*
 div#logo {
     float: left;
 }
@@ -53,7 +56,9 @@ div#logo #brand {
 	color: rgba(255, 255, 255, 0.78);
 	text-shadow: 2px 2px 6px rgb(0, 0, 0);
 	text-decoration: none;
+*/
 }
+/*
 nav ul {
     display: flex;
     flex-direction: row;
@@ -69,6 +74,7 @@ li>a {
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.78);
 	text-shadow: 2px 2px 6px rgb(0, 0, 0);
+*/
 }
 a:hover {
 	color: rgba(255, 255, 255, 0.62);
@@ -102,6 +108,7 @@ h1#main {
 	text-shadow: 4px 4px 6px rgb(0, 0, 0);
 	padding: .4em;
 }
+/* Email Me button*/
 .mb-2, .my-2 {
 	margin-bottom: 2rem!important;
 	text-decoration: none;
@@ -168,7 +175,7 @@ body {
 .topnav a {
 	float: left;
 	display: block;
-	color: #f2f2f2;
+	color: rgba(196, 196, 196, 0.47);
 	padding: 12px 19px;
 	text-decoration: none;
 	font-size: 1em;
@@ -176,12 +183,12 @@ body {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-   color: #90949d;
+   color: #b9bdc6;
 }
 /* Add an active class to highlight the current page */
 .active {
  	background-color: #3f4e5c;
-	color: white;
+	color: white!important;
 }
 .topnav .icon {
 	display: none;
