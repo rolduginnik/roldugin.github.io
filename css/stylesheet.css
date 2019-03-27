@@ -89,7 +89,7 @@ a.icon {
 	  display: block;
 	  text-align: left;}
 }
-/* Menu end*/
+/* Menu end */
 a:hover {
 	color: rgba(255, 255, 255, 0.62);
 } /* подсветка Email Me */
@@ -155,9 +155,8 @@ footer#footer {
 	background-color: rgba(68, 69, 77, 0.74);
 	text-align: center;
 	font-size: 70%;
-	line-height: 3.2em;
+	line-height: 3.8em;
 	font-weight: 300;
-	
 }
 #page-container {
 	position: relative;
@@ -173,8 +172,8 @@ footer#footer {
 	height: 2.5rem; /* Footer height */
 } 
 /* Top button */
-.topbutton {
-	position: fixed;
+#go-top {
+  position: fixed;
 	width: 30px;
 	height: 30px;
 	border: 1px solid #ccc;
@@ -191,4 +190,8 @@ footer#footer {
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;
 	-khtml-border-radius: 100%;
+}
+#go-top:hover {
+	background: #333;
+	color: #fff;
 }

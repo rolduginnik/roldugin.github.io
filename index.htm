@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/go_top.js"></script>
 <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <title>Nikolai Roldugin</title>
 	<script>
 		function myFunction() {
@@ -16,7 +18,30 @@
 			x.className = "topnav";
 		  }
 		}
-	</script>
+	
+	$(document).ready(function(){
+  $('body').append('<a href="#" id="go-top" title="Back to top">^</a>');
+});
+
+$(function() {
+ $.fn.scrollToTop = function() {
+  $(this).hide().removeAttr("href");
+  if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+  var scrollDiv = $(this);
+  $(window).scroll(function() {
+   if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+   else $(scrollDiv).fadeIn("slow")
+  });
+  $(this).click(function() {
+   $("html, body").animate({scrollTop: 0}, "slow")
+  })
+ }
+});
+
+$(function() {
+ $("#go-top").scrollToTop();
+});
+		</script>
 </head>
 <body>
 	<nav>
@@ -64,9 +89,6 @@
 			<p class="col-1">
 			Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 			</p>
-	</div>
-	<div>
-	<a href="#" title="Back to top" class="topbutton">^</a>
 	</div>
 	<div>
 		<footer id="footer">
