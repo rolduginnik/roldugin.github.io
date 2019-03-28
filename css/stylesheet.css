@@ -56,6 +56,7 @@ a.icon {
 	text-decoration: none;
 	font-size: 1em;
 	text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.57);
+	margin-top: 1px;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -66,7 +67,7 @@ a.icon {
 .active {
  	background-color: #3f4e5c;
 	color: white!important;
-	margin-top: 3px;
+	margin-top: 0px!important;
 	font-size: 1.2em!important;
 }
 .topnav .icon {
@@ -185,5 +186,5 @@ footer#footer {
 	-khtml-border-radius: 100%;
 }
 #go-top:hover {
-	background-image: linear-gradient(rgba(0, 118, 255, 0.11), rgba(226, 226, 37, 0.09));
+	background-image: linear-gradient(rgba(0, 118, 255, 0.11), rgba(226, 66, 37, 0.09));
 }
