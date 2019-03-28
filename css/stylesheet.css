@@ -59,12 +59,15 @@ a.icon {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
-   color: rgba(185, 189, 198, 0.47);
+	color: rgba(185, 189, 198, 0.47);
+	background-color: rgba(32, 33, 41, 0.3);
 }
 /* Add an active class to highlight the current page */
 .active {
  	background-color: #3f4e5c;
 	color: white!important;
+	margin-top: 3px;
+	font-size: 1.2em!important;
 }
 .topnav .icon {
 	display: none;
@@ -173,25 +176,14 @@ footer#footer {
 } 
 /* Top button */
 #go-top {
-  position: fixed;
-	width: 30px;
-	height: 30px;
-	border: 1px solid #ccc;
-	text-decoration: none;
-	text-align: center;
-	font-size: 80%;
-	font-weight: 900;
-	padding: 8px;
-	bottom: 45px;
-	right: 10px;
+	position: fixed;
+	bottom: 35px;
+	right: 0px;
 	cursor: pointer;
-	color:#333;
-	border-radius: 100%;
 	-moz-border-radius: 100%;
 	-webkit-border-radius: 100%;
 	-khtml-border-radius: 100%;
 }
 #go-top:hover {
-	background: #333;
-	color: #fff;
+	background-image: linear-gradient(rgba(0, 118, 255, 0.11), rgba(226, 226, 37, 0.09));
 }
