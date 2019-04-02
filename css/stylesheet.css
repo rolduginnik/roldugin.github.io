@@ -60,6 +60,8 @@ a.icon {
 }
 /* Change the color of links on hover */
 .topnav a:hover {
+	margin-top: -1px;
+	padding: 10px 19px 14px 19px;
 	text-shadow: rgba(0,0,0,.3) 15px 10px 5px;
 	transition: all .4s;
 }
@@ -141,10 +143,6 @@ h1#main {
 	border: 1px solid transparent;
 	padding: .375rem .75rem;
 	border-radius: .25rem;
-}
-.btn:hover {
-	text-shadow: rgba(0,0,0,.3) 10px 8px 4px;
-	transition: all .4s;
 }
 #about {
 	font-family:  BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
