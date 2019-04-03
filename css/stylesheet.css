@@ -57,13 +57,13 @@ a.icon {
 	font-size: 1em;
 	text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.57);
 	margin-top: 1px;
+	transition: all .4s;
 }
 /* Change the color of links on hover */
 .topnav a:not(.active):hover {
 	margin-top: -1px;
 	padding: 13px 19px;
 	text-shadow: rgba(0,0,0,.3) 15px 10px 5px;
-	transition: all .4s;
 }
 /* Add an active class to highlight the current page */
 .active {
@@ -105,16 +105,19 @@ section {
 	background-image: url(../images/background.jpg);
 	text-align: center;
 }
-#pic1 .round {
+ .round {
 	text-align: center;
+	transition: all .4s;
+}
+.round:hover {
+	box-shadow: rgba(0,0,0,.2) 0 0 10em;
 }
 .round {
 	margin-top: 2rem!important;
 	border-radius: 200px;
-	border: 0px solid gray;
 	width: 200px;
 	height: 200px;
-	box-shadow: 0 0 10em rgba(0, 0, 0, 0.9);
+	box-shadow: 0 0 5em rgba(0, 0, 0, 0.9);
 }
 h1#main {
 	text-align: center;
