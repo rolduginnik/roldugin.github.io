@@ -41,7 +41,8 @@ $(function() {
 $(function() {
  $("#go-top").scrollToTop();
 });
-		</script>
+
+</script>
 </head>
 <body>
 	<nav>
@@ -58,9 +59,16 @@ $(function() {
 	<div id="content-wrap">
 
 			<section>
-				<p id="pic1"><img src="images/me.jpg" alt="" class="round"></p>
-				<h1 id="main">Hi, I'm Nick.</h1>
-				<a href="mailto:rolduginnik@gmail.com" class="btn btn-primary my-2">Email Me</a>
+					<img id="myImg" src="images/me.jpg" alt="Nikolai Roldugin">
+
+					<div id="myModal" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>
+
+					<h1 id="main">Hi, I'm Nick.</h1>
+					<a href="mailto:rolduginnik@gmail.com" class="btn btn-primary my-2">Email Me</a>
 			</section>
 			<h2 id="about">About</h2>
 			<p class="col-1">
@@ -75,7 +83,7 @@ $(function() {
 			<p class="col-1">
 			Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
 			</p>
-			
+
 	</div>
 	<div>
 		<footer id="footer">
@@ -87,5 +95,20 @@ $(function() {
 		</script>
 	</div>
 </div>
+<script>
+		var modal = document.getElementById('myModal');
+		var img = document.getElementById('myImg');
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		}
+		var span = document.getElementsByClassName("close")[0];
+		span.onclick = function() {
+			modal.style.display = "none";
+		}
+</script>
 </body>
 </html>
