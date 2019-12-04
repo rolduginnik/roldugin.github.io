@@ -99,6 +99,22 @@ a.icon {
 a:hover {
 	color: rgba(255, 255, 255, 0.62);
 } /* подсветка Email Me */
+a#typo {
+	color: #ff0000;
+	text-decoration: none;
+}
+a:hover#typo {
+	color: #0a00ff;
+	text-decoration: none;
+}
+
+#mlist a{
+	text-decoration: none;
+	font-family: BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+#mlist a:hover{
+	color: #2279c6;
+}
 section {
 	margin-top: 0em;
 	width: 100%;
@@ -326,7 +342,7 @@ footer#footer {
 }
 
 .card-content {
-	padding: 1.4em;
+/*	padding: 1.4em;*/
 }
 
 .card-content h2 {
