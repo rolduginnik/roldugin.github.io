@@ -115,6 +115,9 @@ a:hover#typo {
 #mlist a:hover{
 	color: #2279c6;
 }
+#portfolio a:hover{
+	color: #2279c6;
+}
 section {
 	margin-top: 0em;
 	width: 100%;
